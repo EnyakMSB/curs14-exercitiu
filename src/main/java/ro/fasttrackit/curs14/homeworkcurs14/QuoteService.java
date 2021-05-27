@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class QuoteService {
 
-    public List<Quotes> quotesList;
+    public final List<Quotes> quotesList;
 
     public QuoteService(List<Quotes> quotesList) {
         this.quotesList = new ArrayList<>();
