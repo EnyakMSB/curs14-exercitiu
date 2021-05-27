@@ -8,12 +8,12 @@ import java.util.List;
 public class QuotesFromFile {
 
     public static void main(String[] args) throws Exception {
-        ArrayList<Quotes> quote = readFromFile();
+        List<Quotes> quote = readFromFile();
         quote.forEach(System.out::println);
     }
 
-    public static ArrayList<Quotes> readFromFile() throws Exception {
-        ArrayList<Quotes> quotes = new ArrayList<>();
+    public static List<Quotes> readFromFile() throws Exception {
+        List<Quotes> quotes = new ArrayList<>();
         BufferedReader fileReader = new BufferedReader(new FileReader("src/main/resources/quotes.txt"));
         String line;
         int id = 1;
