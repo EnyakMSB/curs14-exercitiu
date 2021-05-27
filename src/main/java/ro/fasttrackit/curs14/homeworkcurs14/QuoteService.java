@@ -60,7 +60,7 @@ public class QuoteService {
     public String getRandomQuote(){
         String result=null;
         Random random=new Random();
-        int randomValue=random.nextInt(46);
+        int randomValue=1 + random.nextInt(5420);
         for(Quotes quote:quotesList){
             if(randomValue ==quote.getId()){
                 result = randomValue + " ~ " + quote.getQuote();
